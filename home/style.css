@@ -1,0 +1,445 @@
+.container{
+    max-width: 1440px;
+    margin: 0;
+    padding: 0;
+}
+
+#icon {
+    height: 60px;
+    margin: 0;
+    padding-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+.list-inline-item {
+    margin-left: 10px; /* Sesuaikan margin sesuai kebutuhan */
+}
+
+
+#p {
+    max-height: 30px;
+    background-color: #B38CB3;
+    margin-left: 0 ;
+    margin-right: 0 ;
+    padding-left: 0 ;
+    padding-right: 0 ;
+  }
+  
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FABBFA;
+}
+
+.navbar-brand {
+    margin-right: auto;
+}
+
+#logo{
+    height: 45px;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+}
+
+#footer {
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: #FABBFA;
+}
+
+.home {
+box-sizing: border-box;
+width: 100%;
+height: 585px;
+align-items: center;
+display: flex;
+flex-direction: column;
+background-size: 100% 100%;
+background-image: url('home.jpg');
+padding-top: 150px;
+}
+
+.home h1{
+font-size: 30px;
+font-weight: 800;
+color: #ffffff;
+font-family: Montserrat, sans-serif;
+}
+
+.home p{ 
+  text-align: center;
+  font-size: 15px;
+  font-weight: 450;
+  color: #ffffff;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.home button{
+background-color: #FF00F5;
+padding: 13px;
+border-radius: 40px;
+font-weight: 1000;
+font-family: Montserrat, sans-serif;
+color: #ffffff;
+margin-top: 70px;
+border: 0;
+}
+
+.container-ct{
+  background:#FABBFA;
+	font-family: "Open Sans", sans-serif;
+}
+h2 {
+	color: #000;
+	font-size: 30px;
+	font-weight: 800;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	margin: 30px 0 60px;
+}
+h2::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 4px;
+	border-radius: 1px;
+	background: #FF00F5;
+	left: 0;
+	right: 0;
+	bottom: -20px;
+}
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel .item {
+	color: #747d89;
+	min-height: 325px;
+	text-align: center;
+	overflow: hidden;
+}
+.carousel .thumb-wrapper {
+	padding: 25px 15px;
+	background: #fff;
+	border-radius: 6px;
+	text-align: center;
+	position: relative;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+.carousel .item .img-box {
+	height: 120px;
+	margin-bottom: 20px;
+	width: 100%;
+	position: relative;
+}
+.carousel .item img {	
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.carousel .item h4 {
+	font-size: 18px;
+}
+.carousel .item h4, .carousel .item p, .carousel .item ul {
+	margin-bottom: 5px;
+}
+.carousel .thumb-content .btn {
+	color: #7ac400;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: none;
+	border: 1px solid #7ac400;
+	padding: 6px 14px;
+	margin-top: 5px;
+	line-height: 16px;
+	border-radius: 20px;
+}
+.carousel .thumb-content .btn:hover, .carousel .thumb-content .btn:focus {
+	color: #fff;
+	background: #7ac400;
+	box-shadow: none;
+}
+.carousel .thumb-content .btn i {
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.carousel .item-price {
+	font-size: 13px;
+	padding: 2px 0;
+}
+.carousel .item-price strike {
+	opacity: 0.7;
+	margin-right: 5px;
+}
+.carousel-control-prev, .carousel-control-next {
+	height: 44px;
+	width: 40px;
+	background: #FF00F5;	
+	margin: auto 0;
+	border-radius: 4px;
+	opacity: 0.8;
+}
+.carousel-control-prev:hover, .carousel-control-next:hover {
+	background: #FF00F5;
+	opacity: 1;
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 36px;
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	margin: -19px 0 0 0;
+	z-index: 5;
+	left: 0;
+	right: 0;
+	color: #fff;
+	text-shadow: none;
+	font-weight: bold;
+}
+.carousel-control-prev i {
+	margin-left: -2px;
+}
+.carousel-control-next i {
+	margin-right: -4px;
+}		
+.carousel-indicators {
+	bottom: -50px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 4px;
+	border-radius: 50%;
+	border: none;
+}
+.carousel-indicators li {	
+	background: rgba(0, 0, 0, 0.2);
+}
+.carousel-indicators li.active {	
+	background: rgba(0, 0, 0, 0.6);
+}
+.carousel .wish-icon {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 99;
+	cursor: pointer;
+	font-size: 16px;
+	color: #abb0b8;
+}
+.carousel .wish-icon .fa-heart {
+	color: #ff6161;
+}
+.star-rating li {
+	padding: 0;
+}
+.star-rating i {
+	font-size: 14px;
+	color: #ffc000;
+}
+
+.testimonial {
+	background: white;
+	background: linear-gradient(to left, #7a60ff, #cd9ffa);
+	padding:100px 0px;
+	position:relative;
+}
+.testimonial::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(images/pattern.png);
+}
+
+.about {
+    position: relative;
+	align-items: center;
+    width: 100%;
+	height: 585px;
+}
+
+.about .text-wrapper {
+	margin-top: 10px;
+	text-align: center;
+    top: 32px;
+    left: 552px;
+    font-family: "Inter-ExtraBold", Helvetica;
+    font-weight: 700;
+    color: #7e61b5;
+    font-size: 50px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+
+.about .snapinsta {
+    position: absolute;
+    width: 40%;
+    height: 54%;
+    top: 164px;
+    left: 44px;
+    object-fit: cover;
+	border-radius: 10px;
+}
+
+.about .overlap {
+    position: absolute;
+    width: 641px;
+    height: 300px;
+    top: 163px;
+    left: 620px;
+}
+
+.about .div {
+    position: absolute;
+    width: 600px;
+    top: 62px;
+    left: 2px;
+    font-family: "Montserrat-Regular", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.about .p {
+    position: absolute;
+    width: 641px;
+    top: 0;
+    left: 0;
+    font-family: "Montserrat-Regular", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    color: #1e1e1e;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.overlap button {
+	padding: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	border: 0;
+	border-radius: 40px;
+	background-color: #FF00F5;
+	margin-top: 240px;
+	margin-left: 450px;
+font-weight: 1000;
+font-family: Montserrat, sans-serif;
+color: #ffffff;
+}
+
+/* testi */
+body{
+    background-color:#eee;
+}
+
+.card{
+    
+    border:none;
+}
+
+.user-content p{
+    margin-top:5px;
+    font-size:12px;
+}
+
+
+.ratings i{
+    color:blue;
+}
+/* testi */
+
+/* contact */
+.contact {
+    position: relative;
+	align-items: center;
+    width: 100%;
+	height: 585px;
+	background:#FABBFA;
+}
+
+.contact .snapinsta {
+    position: absolute;
+    width: 40%;
+    height: 54%;
+    top: 164px;
+    left: 44px;
+    object-fit: cover;
+	border-radius: 10px;
+}
+
+.contact .overlap {
+    position: absolute;
+    width: 641px;
+    height: 300px;
+    top: 163px;
+    left: 620px;
+}
+
+.contact .div {
+    position: absolute;
+    width: 600px;
+    top: 7px;
+    left: 2px;
+    font-family: "Montserrat-Regular", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.contact .p {
+    position: absolute;
+    width: 641px;
+    top: 0;
+    left: 0;
+    font-family: "Montserrat-Regular", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    color: #1e1e1e;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.contact .overlap button {
+	padding: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	border: 0;
+	border-radius: 40px;
+	background-color: #FF00F5;
+	margin-top: 240px;
+	margin-left: 200px;
+font-weight: 1000;
+font-family: Montserrat, sans-serif;
+color: #ffffff;
+}
+/* contact */
+.top-line {
+	width: 100%;
+	height: 2px;
+	background-color: #333; /* Ubah warna garis sesuai kebutuhan Anda */
+}
