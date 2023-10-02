@@ -1,0 +1,140 @@
+.container{
+    max-width: 1440px;
+    background-color: #FABBFA;
+    margin: 0;
+    padding: 0px 0 0px 0;
+}
+
+#icon {
+    height: 60px;
+    background-color: #FABBFA;
+    margin: 0;
+    padding-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+.list-inline-item {
+    margin-left: 10px; 
+}
+
+
+#p{
+    max-height: 30px;
+    background-color: #B38CB3;
+    margin: 0;
+    padding: 2px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FABBFA;
+}
+
+.navbar-brand {
+    margin-right: auto;
+}
+
+#logo{
+    height: 45px;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    background-color: #ff56c5;
+    font-weight: bold;
+    font-family: Arial, sans-serif; /* Ganti dengan font yang Anda sukai */
+}
+
+/* Body Section Styles */
+.body-header {
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+
+.section-title {
+    color: white;
+    font-size: 43px; /* Besarkan sedikit tulisannya */
+    margin-bottom: 10px;
+}
+
+.section-divider {
+    color: white;
+    font-size: 23px; /* Besarkan sedikit tulisannya */
+    margin-bottom: 20px;
+}
+
+.section-description {
+    color: white;
+    font-size: 19px; /* Besarkan sedikit tulisannya */
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Menggunakan 3 kolom */
+    grid-gap: 10px;
+    margin-bottom: 20px;
+    padding-left: 200px; /* Menambahkan padding kiri */
+}
+
+/* Menggunakan margin-top untuk menggeser produk ke bawah */
+.product:nth-child(4),
+.product:nth-child(5),
+.product:nth-child(6) {
+    margin-top: 50px; /* Sesuaikan sesuai preferensi Anda */
+}
+
+.product {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-img {
+    width: 50%;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product:hover .product-img {
+    transform: scale(1.1);
+}
+
+.product-navigation {
+    display: flex;
+    justify-content: space-between; /* Panah di ujung kiri dan kanan */
+    align-items: center;
+    margin-top: 0px;
+}
+
+.prev-button,
+.next-button {
+    background-color: white; /* Warna yang bersahabat dengan putih */
+    color: #ff56c5;
+    border: black;
+    padding: 7px 11px;
+    font-size: 24px; /* Besarkan sedikit tulisannya */
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: -500px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: black; /* Warna yang tidak tabrakan dengan putih */
+    color: white;
+}
