@@ -1,97 +1,147 @@
-.container{
-    max-width: 1440px;
-    margin: 0;
-    padding: 0;
-}
-
-#icon {
-    height: 60px;
-    margin: 0;
-    padding-top: 5px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-
-
-.list-inline-item {
-    margin-left: 10px; /* Sesuaikan margin sesuai kebutuhan */
-}
-
-
-#p {
-    max-height: 30px;
-    background-color: #B38CB3;
-    margin-left: 0 ;
-    margin-right: 0 ;
-    padding-left: 0 ;
-    padding-right: 0 ;
+/* navbar */
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0;
   }
   
+  .navbar {
+	background-color: #FABBFA;
+  }
+  
+  .navbar-toggler {
+	background-color: transparent;
+	border: none;
+  }
+  
+  .navbar-brand {
+	margin-right: auto;
+  }
+  
+  #logo {
+	height: 45px;
+  }
+  
+  .navbar-nav .nav-link {
+	color: black;
+  }
+  
+  @media (max-width: 991px) {
+	.navbar-nav {
+	  margin-top: 10px;
+	}
+  
+	.navbar-collapse {
+	  background-color: #FABBFA;
+	  padding: 15px;
+	  border-radius: 5px;
+	}
+  
+	.navbar-toggler-icon {
+	  background-color: #000;
+	}
+  
+	.navbar-toggler {
+	  margin-right: 10px;
+	}
+  }
+  /* navbar */
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #FABBFA;
+  /* footer */
+  .garis {
+	width: 100%; /* Lebar garis 100% dari lebar container */
+	border: 1px solid #000; /* Warna dan jenis garis */
+	margin: 20px 0; /* Margin atas dan bawah untuk jarak */
 }
+  #footer {
+	max-width: 100%;
+	background-color: #FABBFA;
+	margin: 0;
+	padding: 10px 0;
+	text-align: center;
+  }
+  
+  #icon {
+	background-color: #FABBFA;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .list-inline-item {
+	margin-left: 10px;
+  }
+  
+  .icon-img {
+	width: 30px; /* Ubah ukuran ikon sesuai kebutuhan */
+	height: auto; /* Biarkan tinggi otomatis disesuaikan */
+	padding-bottom: 15px;
+  }
+  
+  #p {
+	max-height: 30px;
+	background-color: #B38CB3;
+	margin: 0;
+	padding: 2px;
+  }
+  
+  /* footer */
 
-.navbar-brand {
-    margin-right: auto;
-}
-
-#logo{
-    height: 45px;
-}
-
-.navbar-nav .nav-link {
-    color: black;
-}
-
-#footer {
-    max-width: 100%;
-    box-sizing: border-box;
-    background-color: #FABBFA;
-}
-
+/* home */
 .home {
-box-sizing: border-box;
-width: 100%;
-height: 585px;
-align-items: center;
-display: flex;
-flex-direction: column;
-background-size: 100% 100%;
-background-image: url('home.jpg');
-padding-top: 150px;
-}
-
-.home h1{
-font-size: 30px;
-font-weight: 800;
-color: #ffffff;
-font-family: Montserrat, sans-serif;
-}
-
-.home p{ 
-  text-align: center;
-  font-size: 15px;
-  font-weight: 450;
-  color: #ffffff;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.home button{
-background-color: #FF00F5;
-padding: 13px;
-border-radius: 40px;
-font-weight: 1000;
-font-family: Montserrat, sans-serif;
-color: #ffffff;
-margin-top: 70px;
-border: 0;
-}
-
+	box-sizing: border-box;
+	width: 100%;
+	padding-top: 200px;
+	padding-bottom: 100px;
+	text-align: center;
+	background-image: url('home.jpg');
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+  }
+  
+  .home h1 {
+	font-size: 30px;
+	font-weight: 800;
+	font-family: Montserrat, sans-serif;
+	margin-bottom: 20px;
+  }
+  
+  .home p {
+	font-size: 15px;
+	font-weight: 600;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+  }
+  
+  .home button {
+	background-color: #FF00F5;
+	padding: 15px 40px;
+	border-radius: 40px;
+	font-weight: 700;
+	font-family: Montserrat, sans-serif;
+	color: #ffffff;
+	margin-top: 30px;
+	border: 0;
+  }
+  
+  @media (max-width: 767px) {
+	.home {
+	  padding-top: 80px;
+	  padding-bottom: 80px;
+	}
+  
+	.home h1 {
+	  font-size: 24px;
+	}
+  
+	.home p {
+	  font-size: 14px;
+	}
+  }
+  /* home */
+  
 .container-ct{
   background:#FABBFA;
 	font-family: "Open Sans", sans-serif;
@@ -500,3 +550,41 @@ button:focus{
 		background-color: #FF00F5;
 		font-weight: 700;
 	}
+
+/* Tambahkan gaya CSS berikut untuk merapikan dan membuat responsif */
+.about-section {
+	padding: 10px 0;
+  }
+  
+  .section-title {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 90px;
+  }
+  
+  .about-image {
+	max-width: 55%;
+	height: auto;
+	border-radius: 10px;
+  }
+  
+  .about-content {
+	padding: 20px;
+  }
+  
+  .about-text {
+	margin-bottom: 20px;
+	font-size: 20px;
+  }
+  
+  .btn-primary {
+	background-color: #FF00F5;
+	color: #fff;
+	border: none;
+  }
+  
+  .btn-primary:hover {
+	background-color: #8a1286;
+  }
+  
