@@ -2,14 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CATALOG</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>CATALOG</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top container-fluid">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="logo.png" alt="" id="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
@@ -18,19 +22,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About Us</a>
+              <a class="nav-link active" aria-current="page" href="#about">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Catalog</a>
+              <a class="nav-link active" aria-current="page" href="#catalog">Catalog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Review</a>
+              <a class="nav-link active" aria-current="page" href="#review">Review</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Contact</a>
+              <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -44,40 +48,274 @@
         <p class="section-description">Temukan beragam pilihan produk terbaik kami</p>
     </header>
     
-    <section class="body-section">
-        <div class="product-grid">
-            <!-- Produk 1 -->
-            <div class="product">
-                <img src="1.1.png" alt="Product 1" class="product-img">
-            </div>
-            <!-- Produk 2 -->
-            <div class="product">
-                <img src="2.1.png" alt="Product 2" class="product-img">
-            </div>
-            <!-- Produk 3 -->
-            <div class="product">
-                <img src="2.2.png" alt="Product 3" class="product-img">
-            </div>
-            <!-- Produk 4 -->
-            <div class="product">
-                <img src="3.1.png" alt="Product 4" class="product-img">
-            </div>
-            <!-- Produk 5 -->
-            <div class="product">
-                <img src="3.3.png" alt="Product 5" class="product-img">
-            </div>
-            <!-- Produk 6 -->
-            <div class="product">
-                <img src="3.4.png" alt="Product 6" class="product-img">
-            </div>
-        </div>
-        
-        <div class="product-navigation">
-            <button class="prev-button">←</button>
-            <button class="next-button">→</button>
-        </div>
-    </section>
+<!-- catalog -->
+<div class="container-ct" >
+	<div class="row">
+		<div class="col-md-12">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+			<!-- Carousel indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+			</ol>   
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="item carousel-item active">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+								<div class="img-box">
+									<img src="1.1.png" class="img-fluid" alt="">									
+								</div>
+								<div class="thumb-content">
+									<h4>Tipe 2.1</h4>									
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+								<div class="img-box">
+									<img src="2.1.png" class="img-fluid" alt="Headphone">
+								</div>
+								<div class="thumb-content">
+									<h4>Tipe 2.2</h4>									
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+								</div>						
+							</div>
+						</div>		
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+								<div class="img-box">
+									<img src="2.2.png" class="img-fluid" alt="Macbook">
+								</div>
+								<div class="thumb-content">
+									<h4>Tipe 2.3</h4>									
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+										</ul>
+									</div>
+								</div>						
+							</div>
+						</div>								
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+								<div class="img-box">
+									<img src="3.1.png" class="img-fluid" alt="Nikon">
+								</div>
+								<div class="thumb-content">
+									<h4>Tipe 2.4</h4>									
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+        <div class="item carousel-item">
+          <div class="row">
+              <div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+								<div class="img-box">
+									<img src="3.3.png" class="img-fluid" alt="Play Station">
+								</div>
+								<div class="thumb-content">
+									<h4>Tipe 2.5</h4>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+								<div class="img-box">
+									<img src="3.4.png" class="img-fluid" alt="Macbook">
+								</div>
+								<div class="thumb-content">
+									<h4>Tipe 2.6</h4>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+										</ul>
+									</div>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+								<div class="img-box">
+									<img src="Sold Out.png" class="img-fluid" alt="Speaker">
+								</div>
+								<div class="thumb-content">
+									<h4>Tipe 2.7</h4>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+								<div class="img-box">
+									<img src="3.5.png" class="img-fluid" alt="Galaxy">
+								</div>
+								<div class="thumb-content">
+									<h4>Tipe 2.9</h4>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+								</div>						
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+</div>
+<!-- catalog -->
     
+<!-- Form -->
+<div class="container" id="form">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Form Pemesanan Produk</h2>
+            <form id="order-form" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="nama">Nama:</label>
+                    <input type="text" class="form-control" id="nama" name="nama" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nomor_telepon">Nomor Telepon:</label>
+                    <input type="tel" class="form-control" id="nomor_telepon" name="nomor_telepon" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Alamat Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="alamat_pengiriman">Alamat Pengiriman:</label>
+                    <input type="text" class="form-control" id="alamat_pengiriman" name="alamat_pengiriman" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tanggal_pengiriman">Tanggal Pengiriman:</label>
+                    <input type="date" class="form-control" id="tanggal_pengiriman" name="tanggal_pengiriman" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipe_produk">Tipe Produk:</label>
+                    <select class="form-control" id="tipe_produk" name="tipe_produk" required>
+                        <option value="Tipe 2.1">Tipe 2.1</option>
+                        <option value="Tipe 2.2">Tipe 2.2</option>
+                        <option value="Tipe 2.3">Tipe 2.3</option>
+                        <option value="Tipe 2.4">Tipe 2.4</option>
+                        <option value="Tipe 2.5">Tipe 2.5</option>
+                        <option value="Tipe 2.6">Tipe 2.6</option>
+                        <option value="Tipe 2.7">Tipe 2.7</option>
+                        <option value="Tipe 2.9">Tipe 2.9</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="jumlah">Jumlah:</label>
+                    <input type="number" class="form-control" id="jumlah" name="jumlah" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="catatan">Catatan Tambahan:</label>
+                    <textarea class="form-control" id="catatan" name="catatan" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Metode Pembayaran:</label>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="bank_transfer" name="metode_pembayaran" value="Bank Transfer" required>
+                        <label class="form-check-label" for="bank_transfer">Bank Transfer</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="kartu_kredit" name="metode_pembayaran" value="Kartu Kredit" required>
+                        <label class="form-check-label" for="kartu_kredit">Kartu Kredit</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Pesan</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Form -->
+
     <!-- footer -->
     <footer>
         <div class="container" id="footer">
@@ -106,6 +344,7 @@
     
     <!-- jQuery dan Bootstrap JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
