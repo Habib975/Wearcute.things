@@ -375,20 +375,33 @@
 <!-- review -->
 
 <!-- contact us -->
-<div class="contact" >
-	<h2 id="contact"><b>CONTACT US</b></h2>
-	<img class="snapinsta" src="contact.jpg" />
-	<div class="overlap">
-	<p class="div">
-		Kami senang mendengar dari Anda! Jika Anda memiliki pertanyaan, komentar, atau saran, jangan ragu untuk menghubungi kami.
-	</p>
-	<button class="btn btn-primary btn-lg">CONTACT ME</button>	
-	</div>
-	
-	</div>
+
+<div class="container-fluid px-1 py-5 mx-auto" id="contact">
+	<h2><b>CONTACT US</b></h2>
+    <div class="row d-flex justify-content-center">
+        <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+            <div class="card">
+                <form class="form-card" onsubmit="event.preventDefault()">
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Nama Depan<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname" onblur="validate(1)"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Nama Belakang<span class="text-danger"> *</span></label> <input type="text" id="lname" name="lname"  onblur="validate(2)"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Email<span class="text-danger"> *</span></label> <input type="email" id="email" name="email" placeholder="" onblur="validate(3)"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Nomor Telepon<span class="text-danger"> *</span></label> <input type="number" id="mob" name="mob" placeholder="" onblur="validate(4)"> </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-12 flex-column d-flex"> <label class="form-control-label px-3">Masukkan Pesan Anda<span class="text-danger"> *</span></label> <textarea type="text" id="ans" name="ans" placeholder="" onblur="validate(6)" rows="4"></textarea> </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="form-group col-sm-6"> <button type="submit" class="btn-block">KIRIM</button> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- contact us -->
-
-
     <!-- footer -->
     <footer>
         <div class="container" id="footer">
@@ -421,6 +434,41 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+ document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); 
+      const fname = document.getElementById("fname").value;
+      const lname = document.getElementById("lname").value;
+      const email = document.getElementById("email").value;
+      const mob = document.getElementById("mob").value;
+      const ans = document.getElementById("ans").value;
+
+    
+      if (fname && lname && email && mob && ans) {
+        // Buat elemen notifikasi
+        const notification = document.createElement("div");
+        notification.className = "alert alert-success";
+        notification.innerHTML = "berhasil dikirim!";
+
+        // Sisipkan notifikasi di atas formulir
+        const contactContainer = document.getElementById("contact");
+        contactContainer.insertBefore(notification, contactContainer.firstChild);
+
+        
+        form.reset();
+
+        
+        setTimeout(function () {
+          notification.style.display = "none";
+        }, 5000);
+      } else {
+        
+        alert("Silakan isi semua bidang yang diperlukan.");
+      }
+    });
+  });
       $(document).ready(function(){
         $(".wish-icon i").click(function(){
           $(this).toggleClass("fa-heart fa-heart-o");
