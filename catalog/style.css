@@ -121,8 +121,8 @@
     }
 
     .carousel .item img {
-        max-width: 125%;
-        max-height: 125%;
+        max-width: 110%;
+        max-height: 110%;
         display: inline-block;
         position: absolute;
         bottom: 0;
