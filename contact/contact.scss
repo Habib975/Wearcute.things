@@ -1,8 +1,10 @@
+//variable
 $primary-color: #FF0099;
 $secondary-color: #DC00D3;
 $form-bg-color: #FFC3EE;
 $button-bg-color: #FF00F5;
 
+//style
 body {
 font-family: Arial, sans-serif;
 background-color: #ffffff;
@@ -10,10 +12,11 @@ background-color: #ffffff;
 
 .section-header {
  margin-top: 40px;
+}
 
 h3 {
 font-size: 36px;
-color: $primary-color;
+color: $primary-color; //global scope
 }
 
 .line {
@@ -21,9 +24,9 @@ display: block;
 margin: 20px auto;
 width: 60px;
 height: 2px;
-background: $secondary-color;
+background: $secondary-color; 
 }
-}
+
 
 .contact-form {
 padding: 5px;
