@@ -32,22 +32,26 @@ body {
 .contact-form .form-control {
   height: 42px;
   padding: 10px;
-  background: #fff;
+  background: #FFC3EE;
   border-radius: 10px;
   margin-bottom: 20px;
   border: 1px solid #e4e4e4;
   transition: all 0.3s ease-in-out;
+}
+.contact-form .form-control:focus {
   background-color: #FFC3EE;
 }
 .contact-form textarea {
   resize: none;
   padding: 10px;
   height: 150px;
-  background: #fff;
+  background: #FFC3EE;
   border-radius: 10px;
   margin-bottom: 20px;
   border: 1px solid #e4e4e4;
   transition: all 0.3s ease-in-out;
+}
+.contact-form textarea:focus {
   background-color: #FFC3EE;
 }
 .contact-form .btn-grad {
@@ -66,7 +70,7 @@ body {
 
 .contact-info {
   background-color: #FF00F5;
-  padding: 60px;
+  padding: 40px;
   border-radius: 10px;
   color: #fff;
 }
@@ -119,7 +123,7 @@ body {
   justify-content: space-between;
   background-color: #FABBFA;
 }
-.navbar-brand {
+.navbar .navbar-brand {
   margin-right: auto;
 }
 .navbar #logo {
