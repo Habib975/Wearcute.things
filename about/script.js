@@ -1,4 +1,4 @@
-$(".gambar-produk").hover(
+$("img").hover(
   function () {
     $(this).css("transform", "scale(1.1)");
   },
