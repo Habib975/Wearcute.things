@@ -1,12 +1,13 @@
 /* navbar */
 .container {
-	max-width: 1440px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 0;
   }
   
   .navbar {
-	background-color: #FABBFA;
+  background-color: #FABBFA;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
   }
   
   .navbar-toggler {
@@ -61,30 +62,40 @@
 	text-align: center;
   }
   
+
   #icon {
-	background-color: #FABBFA;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  }
+    height: 60px;
+    background-color: #FABBFA;
+    margin: 0;
+    padding-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+.list-inline-item {
+    margin-left: 10px; 
+}
+
+.horizontal-line {
+	border: none;
+	height: 2px;
+	background-color: #000;
+}
   
-  .list-inline-item {
-	margin-left: 10px;
-  }
-  
-  .icon-img {
-	width: 30px; /* Ubah ukuran ikon sesuai kebutuhan */
-	height: auto; /* Biarkan tinggi otomatis disesuaikan */
-	padding-bottom: 15px;
-  }
-  
-  #p {
-	max-height: 30px;
-	background-color: #B38CB3;
-	margin: 0;
-	padding: 2px;
-  }
-  
+#p{
+    max-height: 30px;
+    background-color: #B38CB3;
+    margin: 0;
+    padding: 2px;
+}
+
+@media (max-width: 767px) {
+	#icon{
+		justify-content: center;
+	}
+}
   /* footer */
 
 /* home */
@@ -128,7 +139,7 @@
   
   @media (max-width: 767px) {
 	.home {
-	  padding-top: 80px;
+	  padding-top: 100px;
 	  padding-bottom: 80px;
 	}
   
@@ -304,6 +315,16 @@ h2::after {
 	color: #ffc000;
 }
 
+/* CSS untuk mengatur jumlah card pada layar mobile */
+@media (max-width: 768px) {
+	.carousel-inner .item {
+	  text-align: center;
+	}
+	.thumb-wrapper {
+	  margin-bottom: 20px;
+	}
+  }
+  
 .testimonial {
 	background: white;
 	background: linear-gradient(to left, #7a60ff, #cd9ffa);
@@ -321,70 +342,11 @@ h2::after {
 	background: url(images/pattern.png);
 }
 
-.about {
-    position: relative;
-	align-items: center;
-    width: 100%;
-	height: 585px;
-}
-
-.about .text-wrapper {
-	margin-top: 10px;
-	text-align: center;
-    top: 32px;
-    left: 552px;
-    font-family: "Inter-ExtraBold", Helvetica;
-    font-weight: 700;
-    color: #7e61b5;
-    font-size: 50px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-
-.about .snapinsta {
-    position: absolute;
-    width: 40%;
-    height: 54%;
-    top: 164px;
-    left: 44px;
-    object-fit: cover;
-	border-radius: 10px;
-}
-
-.about .overlap {
-    position: absolute;
-    width: 641px;
-    height: 300px;
-    top: 163px;
-    left: 620px;
-}
-
-.about .div {
-    position: absolute;
-    width: 600px;
-    top: 62px;
-    left: 2px;
-    font-family: "Montserrat-Regular", Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    color: #000000;
-    font-size: 30px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.about .p {
-    position: absolute;
-    width: 641px;
-    top: 0;
-    left: 0;
-    font-family: "Montserrat-Regular", Helvetica, Arial, sans-serif;
-    font-weight: 800;
-    color: #1e1e1e;
-    font-size: 30px;
-    letter-spacing: 0;
-    line-height: normal;
-}
+.row {
+	display: flex;
+	align-items: center; /* Menyelaraskan elemen anak secara vertikal */
+	justify-content: center; /* Menyelaraskan elemen anak secara horizontal */
+  }
 
 .overlap button {
 	padding: 20px;
@@ -405,10 +367,6 @@ body{
     background-color:#eee;
 }
 
-.card{
-    
-    border:none;
-}
 
 .user-content p{
     margin-top:5px;
@@ -419,75 +377,23 @@ body{
 .ratings i{
     color:blue;
 }
-/* testi */
+/* testi */	
 
-/* contact */
-.contact {
-    position: relative;
-	align-items: center;
-    width: 100%;
-	height: 585px;
-	background:#FABBFA;
-}
+  .contact-image {
+	max-width: 100%;
+	margin-top: -20px;
+  }
 
-.contact .snapinsta {
-    position: absolute;
-    width: 40%;
-    height: 54%;
-    top: 164px;
-    left: 44px;
-    object-fit: cover;
-	border-radius: 10px;
-}
+  @media (max-width: 767px) {
+	.about-image{
+		margin-bottom: 27px;
+	}
+	.about-text{
+		text-align: center;
+	}
+  }
+  
 
-.contact .overlap {
-    position: absolute;
-    width: 641px;
-    height: 300px;
-    top: 163px;
-    left: 620px;
-}
-
-.contact .div {
-    position: absolute;
-    width: 600px;
-    top: 7px;
-    left: 2px;
-    font-family: "Montserrat-Regular", Helvetica, Arial, sans-serif;
-    font-weight: 600;
-    color: #000000;
-    font-size: 30px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.contact .p {
-    position: absolute;
-    width: 641px;
-    top: 0;
-    left: 0;
-    font-family: "Montserrat-Regular", Helvetica, Arial, sans-serif;
-    font-weight: 800;
-    color: #1e1e1e;
-    font-size: 30px;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.contact .overlap button {
-	padding: 20px;
-	padding-left: 40px;
-	padding-right: 40px;
-	border: 0;
-	border-radius: 40px;
-	background-color: #FF00F5;
-	margin-top: 240px;
-	margin-left: 200px;
-font-weight: 1000;
-font-family: Montserrat, sans-serif;
-color: #ffffff;
-}
-/* contact */
 .top-line {
 	width: 100%;
 	height: 2px;
@@ -551,7 +457,7 @@ button:focus{
 		font-weight: 700;
 	}
 
-/* Tambahkan gaya CSS berikut untuk merapikan dan membuat responsif */
+	
 .about-section {
 	padding: 10px 0;
   }
@@ -570,12 +476,15 @@ button:focus{
   }
   
   .about-content {
-	padding: 20px;
-  }
-  
+	display: flex;
+	flex-direction: column; /* Mengatur elemen anak vertikal */
+	align-items: center; /* Mengatur elemen anak secara horizontal di tengah */
+	text-align: center; /* Mengatur teks di tengah */
+ }
   .about-text {
 	margin-bottom: 20px;
 	font-size: 20px;
+	text-align: left;
   }
   
   .btn-primary {
@@ -586,5 +495,38 @@ button:focus{
   
   .btn-primary:hover {
 	background-color: #8a1286;
+  }
+  .contact-text {
+	margin-bottom: 20px;
+	font-size: 20px;
+	text-align: left;
+  }
+  .contact-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center; /* Jika Anda ingin teks di tengah secara horizontal */
+  }
+  
+  /* Mengatur margin atas pada tombol agar tidak terlalu rapat dengan teks */
+  .btn {
+	margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+	.contact-text {
+	  text-align: center;
+	}
+  }
+  
+/* Efek fade in dan fade out pada setiap section */
+/* Efek fade-in untuk semua elemen */
+.fade-in {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+  }
+  
+  .fade-in.visible {
+	opacity: 1;
   }
   
