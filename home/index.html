@@ -42,21 +42,21 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home"
+              <a class="nav-link active" aria-current="page" href="#"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About Us</a>
+              <a class="nav-link" href="/about/about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#catalog">Catalog</a>
+              <a class="nav-link" href="/catalog/index.html">Catalog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#review">Review</a>
+              <a class="nav-link" href="/ulasan/index.html">Review</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="/contact/contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -80,7 +80,7 @@
                 untuk gelang manik-manik berkualitas tinggi dan kreatifitas tak
                 terbatas.
               </p>
-              <button class="btn btn-primary btn-lg">Hubungi Kami</button>
+              <a class="btn btn-primary btn-lg" href="/contact/contact.html">Hubungi Kami</a>
             </div>
           </div>
         </div>
@@ -146,7 +146,7 @@
                         ><i class="fa fa-heart-o"></i
                       ></span>
                       <div class="img-box">
-                        <img src="3.png" class="img-fluid" alt="" />
+                        <img src="1 (2).png" class="img-fluid zoomable" alt="" />
                       </div>
                       <div class="thumb-content">
                         <h4>Tipe 2.1</h4>
@@ -178,7 +178,7 @@
                         ><i class="fa fa-heart-o"></i
                       ></span>
                       <div class="img-box">
-                        <img src="3.png" class="img-fluid" alt="Headphone" />
+                        <img src="2 (2).png" class="img-fluid zoomable" alt="" />
                       </div>
                       <div class="thumb-content">
                         <h4>Tipe 2.2</h4>
@@ -210,7 +210,7 @@
                         ><i class="fa fa-heart-o"></i
                       ></span>
                       <div class="img-box">
-                        <img src="3.png" class="img-fluid" alt="Macbook" />
+                        <img src="3.png" class="img-fluid zoomable" alt="" />
                       </div>
                       <div class="thumb-content">
                         <h4>Tipe 2.3</h4>
@@ -242,7 +242,7 @@
                         ><i class="fa fa-heart-o"></i
                       ></span>
                       <div class="img-box">
-                        <img src="3.png" class="img-fluid" alt="Nikon" />
+                        <img src="4.png" class="img-fluid zoomable" alt="" />
                       </div>
                       <div class="thumb-content">
                         <h4>Tipe 2.4</h4>
@@ -278,7 +278,7 @@
                         ><i class="fa fa-heart-o"></i
                       ></span>
                       <div class="img-box">
-                        <img src="3.png" class="img-fluid" alt="Play Station" />
+                        <img src="5.png" class="img-fluid zoomable" alt="Play Station" />
                       </div>
                       <div class="thumb-content">
                         <h4>Tipe 2.5</h4>
@@ -310,7 +310,7 @@
                         ><i class="fa fa-heart-o"></i
                       ></span>
                       <div class="img-box">
-                        <img src="3.png" class="img-fluid" alt="Macbook" />
+                        <img src="6.png" class="img-fluid zoomable" alt="Macbook" />
                       </div>
                       <div class="thumb-content">
                         <h4>Tipe 2.6</h4>
@@ -342,7 +342,7 @@
                         ><i class="fa fa-heart-o"></i
                       ></span>
                       <div class="img-box">
-                        <img src="3.png" class="img-fluid" alt="Speaker" />
+                        <img src="7.png" class="img-fluid zoomable" alt="Speaker" />
                       </div>
                       <div class="thumb-content">
                         <h4>Tipe 2.7</h4>
@@ -374,7 +374,7 @@
                         ><i class="fa fa-heart-o"></i
                       ></span>
                       <div class="img-box">
-                        <img src="3.png" class="img-fluid" alt="Galaxy" />
+                        <img src="8.png" class="img-fluid zoomable" alt="Galaxy" />
                       </div>
                       <div class="thumb-content">
                         <h4>Tipe 2.9</h4>
@@ -418,6 +418,10 @@
             >
               <i class="fa fa-angle-right"></i>
             </a>
+          </div>
+          <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
           </div>
         </div>
       </div>
@@ -536,7 +540,7 @@
                 Jika Anda bertanya-tanya tentang produk atau layanan kami,
                 jangan ragu untuk menghubungi kami untuk informasi lebih lanjut.
               </p>
-              <button class="btn btn-primary btn-lg">Hubungi Kami</button>
+              <a class="btn btn-primary btn-lg" href="/contact/contact.html">Hubungi Kami</a>
             </div>
           </div>
           <div class="col-md-6">
@@ -587,6 +591,31 @@
           $(this).toggleClass("fa-heart fa-heart-o");
         });
       });
+
+      const zoomableImages = document.querySelectorAll('.zoomable');
+  const modal = document.getElementById('imageModal');
+  const modalImage = document.getElementById('modalImage');
+  const closeBtn = document.querySelector('.close');
+
+  // Tambahkan event listener untuk gambar
+  zoomableImages.forEach(image => {
+    image.addEventListener('click', () => {
+      modalImage.src = image.src;
+      modal.style.display = 'block';
+    });
+  });
+
+  // Tutup modal saat tombol tutup diklik
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  // Tutup modal saat mengklik di luar modal
+  window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
 
     </script>
   </body>
