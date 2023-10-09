@@ -83,6 +83,43 @@ body {
   background-color: #ffffff;
 }
 
+.contact-form {
+  padding: 5px;
+}
+.contact-form h2 {
+  font-size: 24px;
+  color: #333;
+}
+.contact-form .btn-grad {
+  background-color: #FF00F5;
+}
+.contact-form .btn-grad:hover {
+  background-image: linear-gradient(to right, #d332c6, #ff14c4);
+}
+
+.alert {
+  margin-top: 20px;
+  text-align: center;
+  display: none;
+}
+
+.button-1 {
+  background-color: #FF0099;
+}
+
+.button-2 {
+  background-color: #DC00D3;
+}
+
+.button-3 {
+  background-color: #FF00F5;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
 .section-header {
   margin-top: 40px;
 }

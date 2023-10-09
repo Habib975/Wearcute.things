@@ -25,6 +25,45 @@ $alert-background-color: #FABBFA;
 $list-item-margin: 10px;
 $icon-background-color: #FABBFA;
 $p-background-color: #B38CB3;
+$isDarkTheme: true;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: if($isDarkTheme, $background-color, #000); 
+}
+
+.contact-form {
+  padding: 5px;
+
+  h2 {
+    font-size: 24px;
+    color: if($isDarkTheme, $text-color, #fff); 
+  }
+
+  .btn-grad {
+    background-color: if($isDarkTheme, $button-background-color, #333); 
+
+    &:hover {
+      background-image: if($isDarkTheme, gradient-background(#d332c6, #ff14c4), none); 
+    }
+  }
+}
+
+.alert {
+  margin-top: 20px;
+  text-align: center;
+  display: if($isDarkTheme, none, block); 
+}
+
+$button-colors: #FF0099, #DC00D3, #FF00F5;
+
+@for $i from 1 through length($button-colors) {
+  .button-#{$i} {
+    background-color: nth($button-colors, $i);
+    
+  }
+}
+
 
 // Functions
 @function gradient-background($start-color, $end-color) {
