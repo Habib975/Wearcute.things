@@ -29,6 +29,86 @@ body {
   font-size: 18px;
   color: #333;
 }
+
+.contact-info {
+  background-color: #FF00F5;
+  padding: 40px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.alert {
+  margin-top: 20px;
+  text-align: center;
+  display: none;
+}
+
+#icon {
+  height: 60px;
+  background-color: #FABBFA;
+  margin: 0;
+  padding-top: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.list-inline-item {
+  margin-left: 10px;
+}
+
+#p {
+  max-height: 30px;
+  background-color: #B38CB3;
+  margin: 0;
+  padding: 2px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FABBFA;
+}
+.navbar .navbar-brand {
+  margin-right: auto;
+}
+.navbar #logo {
+  height: 45px;
+}
+.navbar .navbar-nav .nav-link {
+  color: black;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.section-header {
+  margin-top: 40px;
+}
+.section-header h3 {
+  font-size: 36px;
+  color: #FF0099;
+}
+.section-header .line {
+  display: block;
+  margin: 20px auto;
+  width: 60px;
+  height: 2px;
+  background: #DC00D3;
+}
+
+.contact-form {
+  padding: 5px;
+}
+.contact-form h2 {
+  font-size: 24px;
+  color: #333;
+}
+.contact-form label {
+  font-size: 18px;
+  color: #333;
+}
 .contact-form .form-control {
   height: 42px;
   padding: 10px;

@@ -1,3 +1,19 @@
+// main.scss
+
+@import 'variables';
+@import 'functions';
+@import 'body';
+@import 'section-header';
+@import 'contact-form';
+@import 'contact-info';
+@import 'alert';
+@import 'icon';
+@import 'list-item';
+@import 'p';
+@import 'navbar';
+
+// Additional styles and customization can go here.
+
 // Variables
 $primary-color: #FF0099;
 $secondary-color: #DC00D3;
