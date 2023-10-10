@@ -1,4 +1,20 @@
 #logo img {
   width: 250px;
   margin-left: 50px;
+}
+
+.footer-control #icon {
+  height: 60px;
+  background-color: #fabbfa;
+  margin: 0;
+  padding-top: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-link active #p {
+  max-height: 30px;
+  background-color: #b38cb3;
+  margin: 0;
+  padding: 2px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,7 +1,32 @@
+$primary-color: #ff00f5;
+$secondary-color: #b38cb3;
+$font-stack: Montserrat, sans-serif;
+
 #logo {
-    img  {
-        width: 250px;
-        margin-left: 50px;
-       
-    }
+  img {
+    width: 250px;
+    margin-left: 50px;
+  }
+}
+
+.footer-control {
+  $bg-color: #fabbfa;
+  #icon {
+    height: 60px;
+    background-color: $bg-color;
+    margin: 0;
+    padding-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.nav-link active {
+  $bg-color: #b38cb3;
+  #p {
+    max-height: 30px;
+    background-color: #b38cb3;
+    margin: 0;
+    padding: 2px;
+  }
 }
