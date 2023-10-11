@@ -1,8 +1,8 @@
 $secondary-color:#B38CB3;
 $button-background-color:#FF00F5;
 $font-stack:Montserrat, sans-serif;
-$lighter-primary: color($primary-color, 20); 
-$darker-primary: color($primary-color, -20);
+$lighter-primary: color($secondary-color, 20); 
+$darker-primary: color($secondary-color, -20);
 
 
 /* navbar */
@@ -21,7 +21,7 @@ $darker-primary: color($primary-color, -20);
 }
   #footer {
 	max-width: 100%;
-	background-color: $primary-color;
+	background-color: $secondary-color;
 	margin: 0;
 	padding: 10px 0;
 	text-align: center;
@@ -30,7 +30,7 @@ $darker-primary: color($primary-color, -20);
 
   #icon {
     height: 60px;
-    background-color: $primary-color;
+    background-color: $secondary-color;
     margin: 0;
     padding-top: 5px;
     display: flex;

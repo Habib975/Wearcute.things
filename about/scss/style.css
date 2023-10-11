@@ -15,7 +15,7 @@
 
 #footer {
   max-width: 100%;
-  background-color: blue;
+  background-color: #B38CB3;
   margin: 0;
   padding: 10px 0;
   text-align: center;
@@ -23,7 +23,7 @@
 
 #icon {
   height: 60px;
-  background-color: blue;
+  background-color: #B38CB3;
   margin: 0;
   padding-top: 5px;
   display: flex;
