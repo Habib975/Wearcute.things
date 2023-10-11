@@ -8,7 +8,18 @@ $font-stack:Montserrat, sans-serif;
 $lighter-primary: color($primary-color, 20); 
 $darker-primary: color($primary-color, -20);
 
-
+#status {
+	font-size: 20px;
+  
+	@if $primary-color == blue {
+	  color: $primary-color;
+	} @else if $primary-color == red {
+	  color: $secondary-color;
+	} @else {
+	  color: black;
+	}
+  }
+  
 /* navbar */
 .container {
 	width: 100%;
