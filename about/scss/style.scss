@@ -6,6 +6,17 @@ $font-stack:Montserrat, sans-serif;
 $lighter-primary: color($secondary-color, 20); 
 $darker-primary: color($secondary-color, -20);
 
+#status {
+	font-size: 20px;
+  
+	@if $primary-color == blue {
+	  color: $primary-color;
+	} @else if $primary-color == red {
+	  color: $secondary-color;
+	} @else {
+	  color: black;
+	}
+  }
 
 /* navbar */
 .container {
