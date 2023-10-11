@@ -9,9 +9,9 @@ $darker-primary: color($secondary-color, -20);
 #status {
 	font-size: 20px;
   
-	@if $primary-color == blue {
+	@if $primary-color == pink {
 	  color: $primary-color;
-	} @else if $primary-color == red {
+	} @else if $primary-color == magenta {
 	  color: $secondary-color;
 	} @else {
 	  color: black;
