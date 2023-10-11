@@ -1,3 +1,6 @@
+@import 'button';
+@import 'nav';
+
 $primary-color:blue;
 $secondary-color:#B38CB3;
 $button-background-color:#FF00F5;
@@ -5,68 +8,12 @@ $font-stack:Montserrat, sans-serif;
 $lighter-primary: color($primary-color, 20); 
 $darker-primary: color($primary-color, -20);
 
-.button {
-  background-color: $primary-color;
-  color: white;
-}
-
-.button-lighter {
-  background-color: $lighter-primary;
-}
-
-.button-darker {
-  background-color: $darker-primary;
-}
 
 /* navbar */
 .container {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
-  }
-  
-  .navbar {
-	$primary-color:#FABBFA !global;	
-	background-color: $primary-color;
-	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
-  }
-  
-  .navbar-toggler {
-	background-color: transparent;
-	border: none;
-  }
-  
-  .navbar-brand {
-	margin-right: auto;
-  }
-  
-  #logo {
-	height: 45px;
-  }
-  
-  .navbar-nav .nav-link {
-	color: black;
-  }
-  
-  @media (max-width: 991px) {
-	$local-primary-color: #FF0000; /* Variabel lokal untuk perubahan warna lokal */
-	.navbar-nav {
-	  margin-top: 10px;
-	}
-  
-	.navbar-collapse {
-	  background-color: $local-primary-color; /* Menggunakan variabel lokal */
-	  padding: 15px;
-	  border-radius: 5px;
-	}
-  
-	.navbar-toggler-icon {
-	  background-color: #000;
-	}
-  
-	.navbar-toggler {
-	  margin-right: 10px;
-	}
   }
   /* navbar */
 
